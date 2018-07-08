@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SafariExtensionViewController" customModule="Wayback_Machine" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFacebook" destination="mXW-xT-Rtw" id="EO7-Wf-ZUP"/>
+                <outlet property="btnFirst" destination="txI-Am-neb" id="j07-2q-eX5"/>
+                <outlet property="btnRecent" destination="Vd3-g8-AF8" id="BiN-mP-kaH"/>
+                <outlet property="btnSave" destination="MOI-Hk-cAy" id="OBW-qS-CM5"/>
+                <outlet property="btnTwitter" destination="lh8-1R-ICM" id="gyR-IC-B5w"/>
+                <outlet property="imageLogo" destination="cZf-Ub-K47" id="JZQ-V5-hDw"/>
+                <outlet property="view" destination="c22-O7-iKe" id="vwT-Xx-Aiz"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="251"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZf-Ub-K47">
+                    <rect key="frame" x="2" y="156" width="246" height="95"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="246" id="18G-8F-5kh"/>
+                        <constraint firstAttribute="height" constant="95" id="2qY-AC-7Do"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="6SM-hY-Kxn"/>
+                </imageView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MOI-Hk-cAy" customClass="WMButton" customModule="Wayback_Machine" customModuleProvider="target">
+                    <rect key="frame" x="5" y="118" width="240" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="hIk-oN-EFQ"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="Save Page Now" bezelStyle="shadowlessSquare" image="button_background" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="dIL-oJ-aaB">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="16"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="_onSavePageNow:" target="-2" id="drc-R3-Hpz"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vd3-g8-AF8" customClass="WMButton" customModule="Wayback_Machine" customModuleProvider="target">
+                    <rect key="frame" x="5" y="78" width="240" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="fYc-xk-7zl"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="Recent Version" bezelStyle="shadowlessSquare" image="button_background" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="ItL-8e-0Yj">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="16"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="_onRecentVersion:" target="-2" id="oPY-Ft-cTa"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="txI-Am-neb" customClass="WMButton" customModule="Wayback_Machine" customModuleProvider="target">
+                    <rect key="frame" x="5" y="38" width="240" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Beu-fC-oVC"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="First Version" bezelStyle="shadowlessSquare" image="button_background" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="53Y-Es-qly">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="16"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="_onFirstVersion:" target="-2" id="HTd-yH-4o9"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mXW-xT-Rtw" customClass="WMButton" customModule="Wayback_Machine" customModuleProvider="target">
+                    <rect key="frame" x="30" y="3" width="45" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="iGo-dS-NHb"/>
+                        <constraint firstAttribute="height" constant="35" id="zZd-2Q-j02"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="facebook" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="yt5-aL-PJh">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="_onFacebook:" target="-2" id="4MS-FB-9Uu"/>
+                    </connections>
+                </button>
+                <button horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lh8-1R-ICM" customClass="WMButton" customModule="Wayback_Machine" customModuleProvider="target">
+                    <rect key="frame" x="103" y="3" width="40" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="TWO-lz-sCc"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="twitter" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="UUV-Jc-2Wm">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="_onTwitter:" target="-2" id="uN2-Is-bKo"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l8p-3M-53V" customClass="WMButton" customModule="Wayback_Machine" customModuleProvider="target">
+                    <rect key="frame" x="180" y="4" width="40" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="9fj-r5-KXe"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="googleplus" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="VVj-U3-zva">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="_onGooglePlus:" target="-2" id="FoP-Yc-PL6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="lh8-1R-ICM" firstAttribute="top" secondItem="txI-Am-neb" secondAttribute="bottom" id="0tn-2U-CFy"/>
+                <constraint firstAttribute="trailing" secondItem="txI-Am-neb" secondAttribute="trailing" constant="5" id="B0g-nW-6Ps"/>
+                <constraint firstItem="MOI-Hk-cAy" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="5" id="E0M-ib-QO6"/>
+                <constraint firstAttribute="trailing" secondItem="Vd3-g8-AF8" secondAttribute="trailing" constant="5" id="KrC-gE-5rW"/>
+                <constraint firstAttribute="trailing" secondItem="cZf-Ub-K47" secondAttribute="trailing" constant="2" id="QcX-jX-88n"/>
+                <constraint firstItem="mXW-xT-Rtw" firstAttribute="top" secondItem="txI-Am-neb" secondAttribute="bottom" id="QoP-U0-fqD"/>
+                <constraint firstAttribute="trailing" secondItem="MOI-Hk-cAy" secondAttribute="trailing" constant="5" id="SVc-L6-fDu"/>
+                <constraint firstItem="txI-Am-neb" firstAttribute="top" secondItem="Vd3-g8-AF8" secondAttribute="bottom" constant="5" id="UMr-Zb-EZL"/>
+                <constraint firstItem="mXW-xT-Rtw" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="30" id="bIJ-03-OML"/>
+                <constraint firstItem="Vd3-g8-AF8" firstAttribute="top" secondItem="MOI-Hk-cAy" secondAttribute="bottom" constant="5" id="bn0-Wd-1m2"/>
+                <constraint firstItem="cZf-Ub-K47" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="eWv-xF-sx9"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lh8-1R-ICM" secondAttribute="trailing" constant="20" symbolic="YES" id="fK8-9c-wuN"/>
+                <constraint firstAttribute="trailing" secondItem="l8p-3M-53V" secondAttribute="trailing" constant="30" id="iLx-IT-BI3"/>
+                <constraint firstItem="MOI-Hk-cAy" firstAttribute="top" secondItem="cZf-Ub-K47" secondAttribute="bottom" constant="3" id="iPP-97-xjr"/>
+                <constraint firstItem="l8p-3M-53V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="rcQ-0x-UKs"/>
+                <constraint firstItem="cZf-Ub-K47" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="2" id="tyj-Uh-fT6"/>
+                <constraint firstItem="txI-Am-neb" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="5" id="u5k-nc-8Fe"/>
+                <constraint firstItem="l8p-3M-53V" firstAttribute="top" secondItem="txI-Am-neb" secondAttribute="bottom" constant="1" id="wqj-jy-yuS"/>
+                <constraint firstItem="lh8-1R-ICM" firstAttribute="leading" secondItem="mXW-xT-Rtw" secondAttribute="trailing" constant="28" id="xfz-8g-QDu"/>
+                <constraint firstItem="Vd3-g8-AF8" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="5" id="yBi-zx-Z7r"/>
+            </constraints>
+            <point key="canvasLocation" x="-47" y="412.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="button_background" width="250" height="40"/>
+        <image name="facebook" width="40" height="30"/>
+        <image name="googleplus" width="40" height="29"/>
+        <image name="logo" width="240" height="100"/>
+        <image name="twitter" width="40" height="30"/>
+    </resources>
+</document>

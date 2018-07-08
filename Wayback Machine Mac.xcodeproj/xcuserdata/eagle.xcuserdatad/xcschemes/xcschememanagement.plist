@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Wayback Machine Mac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Wayback Machine.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D924CE9B1E68595A0068093E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D924CEAC1E68595A0068093E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D924CEB71E68595A0068093E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D924CECD1E6859710068093E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

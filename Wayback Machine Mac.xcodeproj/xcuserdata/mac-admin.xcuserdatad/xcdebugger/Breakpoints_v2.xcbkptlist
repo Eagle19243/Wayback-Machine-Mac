@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wayback Machine/SafariExtensionHandler.swift"
+            timestampString = "552702888.463658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "handleBeforeNavigate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wayback Machine/SafariExtensionHandler.swift"
+            timestampString = "552702888.4639241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "handleBeforeNavigate()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.SFSafariPageProperties&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.SFSafariPage&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.SFSafariTab&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.SFSafariWindow&gt;) -&gt; () in Wayback_Machine.SafariExtensionHandler.handleBeforeNavigate() -&gt; ()"
+                  moduleName = "Wayback Machine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac-admin/Documents/work/Wayback%20Machine/Wayback%20Machine%20Mac/Wayback%20Machine/SafariExtensionHandler.swift"
+                  timestampString = "552702888.512452"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Int&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.SFSafariPageProperties&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.SFSafariPage&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.SFSafariTab&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.SFSafariWindow&gt;) -&gt; () in Wayback_Machine.SafariExtensionHandler.handleBeforeNavigate() -&gt; ()"
+                  moduleName = "Wayback Machine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac-admin/Documents/work/Wayback%20Machine/Wayback%20Machine%20Mac/Wayback%20Machine/SafariExtensionHandler.swift"
+                  timestampString = "552702888.51956"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
